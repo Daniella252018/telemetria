@@ -1,3 +1,7 @@
+docker ps
+docker images
+docker ps -a
+
 ##para editar el archivo
 
 sudo nano prueba.sh
