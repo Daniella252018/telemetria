@@ -1,0 +1,36 @@
+##para editar el archivo
+
+sudo nano prueba.sh
+
+#para ejecutar el archivo
+
+. ./prueba.sh
+
+#modelo para verificar estado de servidor
+https://programadorwebvalencia.com/script-para-saber-si-un-equipo-esta-encendido/
+
+#instalar mysql en docker
+url: https://muylinux.xyz/como-configurar-mysql-con-docker-en-linux/
+
+1.- docker pull mysql:latest
+2.- docker images mysql
+3.- docker run --name mysql -p 3306:3306 -v mysql_volume:/var/lib/mysql/ -d -e "MYSQL_ROOT_PASSWORD=temp123" mysql
+4.- netstat -tlnup | grep -i 3306
+5.- docker ps 
+6.- en caso de no iniciarse el contenedor (sudo docker start *nombre de imagen*)
+7.- docker exec -it mysql bash
+8.- mysql -u root -p
+9.- ALTER USER 'root'@'localhost' IDENTIFIED BY 'mysqlpassword';
+
+#ver tablas
+1.- mysql -u root -p
+2.- show databases;
+3.- use *nombre de database*;
+4.- show tables;
+5.- select * from *nombre de tabla*;
+
+
+#conectarse a mysql desde workbench
+1.- descargar imagen desde pagina oficial
+2.- sudo apt install ./mysql-workbench-community_8.0.27-1ubuntu21.04_amd64.deb
+3.- configurar parametros en workbench
