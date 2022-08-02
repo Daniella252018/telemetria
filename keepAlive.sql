@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS estado (
     servidor_5      VARCHAR(16)     NOT NULL,
     servidor_6      VARCHAR(16)     NOT NULL,
     servidor_7      VARCHAR(16)     NOT NULL,
+    servidor_8      VARCHAR(16)     NOT NULL,
     fecha           datetime        default now(),
     PRIMARY KEY (estadoID)
     
